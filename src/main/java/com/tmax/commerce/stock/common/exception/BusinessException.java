@@ -19,7 +19,7 @@ public class BusinessException extends RuntimeException {
 
     public BusinessException(BusinessErrorCode businessErrorCode, List<?> arguments) {
         this.businessErrorCode = businessErrorCode;
-        this.arguments = arguments.stream().map(Object::toString).collect(Collectors.toList());
+        this.arguments = arguments.stream().map(Object::toString).toList();
     }
 
     /**
