@@ -7,6 +7,7 @@ import org.springframework.http.HttpStatus;
 @Getter
 @RequiredArgsConstructor
 public enum BusinessErrorCode implements ErrorCode {
+    //TODO: 재고 비즈니스 로직에 맞게 수정
     NOT_FOUND_ITEM_CATEGORY(HttpStatus.NOT_FOUND),
     NOT_FOUND_ITEM_GROUP(HttpStatus.NOT_FOUND),
     NOT_FOUND_ITEM(HttpStatus.NOT_FOUND),
